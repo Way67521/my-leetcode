@@ -12,7 +12,7 @@ import java.util.Map;
 public class StrDuplicatechecking {
 
     public static void main(String[] args) {
-        String str = "abcc";
+        String str = "abccde";
         boolean unique = isUniqueMap(str);
         System.out.println(unique);
     }
