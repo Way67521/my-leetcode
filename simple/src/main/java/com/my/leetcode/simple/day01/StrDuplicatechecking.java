@@ -16,6 +16,7 @@ public class StrDuplicatechecking {
         boolean unique = isUniqueMap(str);
         System.out.println(unique);
     }
+
     public static boolean isUniqueForeach(String str) {
         if ("".equals(str)||str == null){
             return false;
@@ -31,12 +32,12 @@ public class StrDuplicatechecking {
         return true;
     }
 
-    public static boolean isUniqueMap(String str) {
-        if ("".equals(str)||str == null){
+    public static boolean isUniqueMap(String astr) {
+        if (astr == null){
             return false;
         }
         Map<Character, Boolean> strMap = new HashMap<Character, Boolean>(128);
-        char[] chars = str.toCharArray();
+        char[] chars = astr.toCharArray();
         for (int i = 0; i < chars.length; i++) {
             Boolean value = strMap.get(chars[i]);
             if (value!= null && value){
