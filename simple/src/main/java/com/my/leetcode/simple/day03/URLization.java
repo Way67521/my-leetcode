@@ -41,6 +41,6 @@ public class URLization {
         return new String(chs,0,charLength);
     }
     public static void main(String[] args) {
-        System.out.println(replaceSpaces("MrJohn Smith    ", 13));
+        System.out.println(replaceSpaces("MrJohn Smith   ", 13));
     }
 }
